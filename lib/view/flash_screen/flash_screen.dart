@@ -1,3 +1,4 @@
+import 'package:first_api/view/auth/login.dart';
 import 'package:first_api/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -14,11 +15,11 @@ class _FlashScreenState extends State<FlashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(Duration(seconds: 3),()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen())));
+    Future.delayed(Duration(seconds: 3),()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>LogIn())));
   }
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold(
+    return const SafeArea(child: Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
